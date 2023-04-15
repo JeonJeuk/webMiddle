@@ -1,0 +1,657 @@
+@font-face {
+    font-family: 'Pretendard';
+    src: url(../font/Pretendard-Bold.otf);
+    src: url(../font/Pretendard-Regular.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    font-family: 'Pretendard';
+    letter-spacing: 1px;
+    height: 3000px;
+}
+
+/* header 공통 속성 */
+.grid-width {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    margin-right: 20px
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button-blue {
+    background-color: #5D33E2;
+    color: white;
+}
+
+.button-gray {
+    background-color: #909090;
+    color: white;
+}
+
+.button-gray:hover {
+    background-color: #5D33E2;
+    transition: 0.3s;
+}
+
+.change-blue {
+    color: #5D33E2;
+}
+
+.change-red {
+    color: red;
+}
+
+.section-title {
+    color: white;
+    font-size: 26px;
+}
+
+.view-more-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-more {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #909090;
+    letter-spacing: -4%;
+    padding-top: 25px;
+}
+
+.view-more:hover {
+    color: white;
+}
+
+.nft-profile {
+    width: 64px;
+    height: 64px;
+}
+/* header 공통 속성 */
+
+/* header*/
+header {
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    background-color: black;
+    top: 0;
+    z-index: 1;
+}
+
+.header-container {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    padding-left: 70px;
+}
+
+.menu ul li {
+    margin-right: 47px;
+}
+
+.menu ul a {
+    color: #909090;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.menu ul a:hover {
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+form {
+  display: flex;
+  margin: 0;
+  margin-right: 8px;
+  width: 845px;
+  height: 50px;
+  background-color: rgba(90, 90, 90, 0.5);
+  border-radius: 15px;
+}
+
+input[type=search] {
+  border: none;
+  margin: 0;
+  font-size: 16px;
+  border-radius: 15px;
+  color: white;
+}
+
+input[type=search]::placeholder {
+  color: #909090;
+}
+
+input[type=search]:focus {
+  box-shadow: 0 0 3px 0 #5D33E2;
+  border-color: #5D33E2;
+  outline: none;
+  color: white;
+}
+
+/* input 기본 delete버튼 없애주는 코드 */
+input::-ms-clear,
+input::-ms-reveal{
+	display:none;width:0;height:0;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
+
+form.nosubmit {
+  border: none;
+  padding: 0;
+}
+
+input.nosubmit {
+  width: 100%;
+  padding: 9px 4px 9px 40px;
+  background: transparent url("../image/search-icon.svg") no-repeat 13px center;
+}
+
+.header-icon {
+    display: flex;
+}
+
+.header-icon img {
+    margin-left: 20px;
+}
+
+/* header*/
+
+/* main-content Section*/
+.main-content {
+    height: 810px;
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, 1), 
+            rgba(0, 0, 0, 0.6)
+        ),
+        url(../image/main-content-background.png);
+}
+
+.main-text {
+    padding-top: 200px;
+}
+
+.title {
+    color: white;
+}
+
+.title h1 {
+    font-size: 64px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.main-title p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #909090;
+    line-height: 160%;
+    letter-spacing: 0px;
+}
+
+.main-price {
+    margin-top: 60px;
+}
+
+.main-price p{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.eth {
+    margin-left: 21px;
+}
+
+.eth p {
+    margin-left: 4px;
+}
+
+.main-button {
+    margin-top: 100px;
+}
+
+/* main-content Section/
+
+/* ranking Section*/
+.ranking {
+    margin-top: 10px;
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+    min-width: 1720px;
+    margin-top: 30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+}
+
+tbody tr {
+    height: 90px;
+    border-radius: 15px;
+}
+
+th {
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+td img {
+    border-radius: 15px;
+}
+
+td, th {
+    padding: 1em 1.5em;
+    text-align: left;
+}
+
+thead th {
+    font-size: 16px;
+    color: #909090;
+}
+
+tbody td {
+    font-size: 18px;
+}
+
+tbody td a{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+tbody tr:hover {
+    background-color: rgba(50,98,149,.3);
+}
+
+tbody td:nth-child(1) {
+    padding: 0;
+    padding-left: 10px;
+}
+
+tbody td:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+tbody td:nth-child(9) {
+    padding: 0;
+    text-align: right;
+}
+
+tbody td:nth-child(7) {
+    padding-top: 30px;
+}
+
+tbody td:nth-child(8) {
+    padding-top: 30px;
+}
+/* ranking Section*/
+
+/* article Section*/
+.article {
+    margin-top: 150px;
+}
+
+.article-container {
+    width: 100%;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+
+.article-box {
+    width: 408px;
+    height: 550px;
+    background: linear-gradient(152.97deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    backdrop-filter: blur(22.5px);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    z-index: 0;
+    
+}
+
+.article-box:hover {
+    transform: translateY(-10px);
+}
+
+.article-text h1{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.article-text {
+    padding: 30px;
+}
+
+.article-text p {
+    color: #909090;
+    line-height: 150%;
+    font-weight: normal;
+    font-size: 15px;
+    letter-spacing: 0px;
+}
+
+.article-button {
+    width: 100%;
+    height: 60px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #909090;
+    cursor: pointer;
+}
+
+.article-button:hover {
+    background-color: #5D33E2;
+    transition: 0.3s;
+}
+
+/* article Section*/
+
+/* partenrship Section*/
+.partnership {
+    margin-top: 200px;
+}
+
+.partnership h1 {
+    text-align: center;
+    line-height: 150%;
+    margin-bottom: 100px;
+}
+
+.partnership-container {
+    justify-content: space-between;
+}
+.partnership-img img {
+    width: 262px;
+    height: 262px;
+    border-radius: 25px;
+}
+/* partenrship Section*/
+
+/* footer Section*/
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #0C0909;
+    margin-top: 200px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-menu {
+    width: 262px;
+    margin-top: 100px;
+}
+
+.footer-menu h3 {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.footer-menu li {
+    font-size: 14px;
+    color: #909090;
+    font-weight: normal;
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.footer-logo {
+    margin-top: 120px;
+    padding-bottom: 80px;
+}
+/* footer Section*/
+
+
+/* COLLECTION PAGE CSS */
+/* collection-main Section */
+.collection-main {
+    width: 100%;
+    height: 250px;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.6)
+        ),
+        url(../image/main-content-background.png);
+}
+
+/* collection-title Section */
+.collection-title {
+    position: relative;
+    height: 480px;
+}
+
+.collection-title-container {
+    width: 100%;
+    position: absolute;
+    top: -70px;
+}
+
+.main-profile {
+    width: 140px;
+    border: 4px solid white;
+    border-radius: 15px;
+}
+
+.collection-name {
+    width: 100%;
+    color: white;
+    justify-content: space-between;
+    margin-top: 30px;
+   
+}
+
+.collection-name h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.collection-name img {
+    margin-left: 5px;
+}
+
+.collection-creator {
+    color: #909090;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.collection-description {
+    margin-top: 20px;
+}
+
+.collection-description ul{
+    display: flex;
+    color: #909090;
+}
+
+.collection-description li {
+    list-style: none;
+    padding-right: 15px;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.collection-description li span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.description-detail {
+    color: #909090;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 20px;
+}
+
+.description-detail p {
+    padding-bottom: 3px;
+}
+
+.collection-price {
+    color: white;
+    display: flex;
+    margin-top: 50px;
+}
+
+.collection-price div {
+    padding-right: 70px;
+}
+
+.collection-price h3 {
+    font-size: 24px;
+}
+
+.collection-price p {
+    font-size: 16px;
+    color: #909090;
+    padding-top: 15px;
+}
+/* collection-title Section */
+
+/* collection-search Section */
+
+.collection-search {
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 90px;
+}
+
+.search {
+    width: 100%;
+}
+
+.collection-form {
+    display: flex;
+    margin: 0;
+    margin-right: 8px;
+    width: 80%;
+    height: 50px;
+    border: 1px solid rgba(90, 90, 90, 0.5);
+    border-radius: 15px;
+    background-color: black;
+}
+
+.collection-input {
+    width: 100%;
+    padding: 9px 4px 9px 40px;
+    background: transparent url("../image/search-icon.svg") no-repeat 13px center;
+}
+
+.price-menu form {
+    background-color: black;
+    width: auto;
+}
+
+.price-menu select {
+    background-color: black;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 15px;
+    border: 1px solid rgba(90, 90, 90, 0.5);
+    appearance: 
+}
+
+.price-menu option:focus {
+    color: white;
+    background-color: white;
+}
+
+.collection-sorting {
+    display: flex;
+    width: 266px;
+    border: 1px solid rgba(90, 90, 90, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+.collection-sorting button {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+
+
+.collection-sorting button:nth-child(1) {
+    background-color: rgba(90, 90, 90, 0.5);
+}
+
+.collection-sorting button:hover {
+    background-color: rgba(90, 90, 90, 0.5);
+}
+
+
+
