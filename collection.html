@@ -102,21 +102,31 @@
             </div>
         </div>
     </section>
-    <section class="collection-search flex">
-        <div class="search-container grid-width flex">
+    <section class="collection-search">
+        <div class="search-container grid-width">
             <div class="search">
                 <form class="collection-form">
                     <input type="search" class="collection-input" placeholder="이름 또는 특성으로 검색해보세요.">
                 </form>
             </div>
-            <div class="price-menu">
-                <form>
-                    <select>
-                        <option>낮은 가격에서 높은 가격</option>
-                        <option>높은 가격에서 낮은 가격</option>
-                    </select>
-                </form>
+
+            <div class="select">
+                <input type="checkbox" id="toggle-option" class="selected">
+                <label for="toggle-option" class="toggle-option flex">
+                    <p>Price low to high</p>
+                    <img src="image/toggle-icon-16x16.svg">
+                </label>
+                <div class="option">
+                    <div class="option-value">Price high to low</div>
+                    <div class="option-value">Recently listed</div>
+                    <div class="option-value">Best offer</div>
+                    <div class="option-value">Most rare</div>
+                    <div class="option-value">Highest last sale</div>
+                    <div class="option-value">Recently sold</div>
+                    <div class="option-value">Recently created</div>
+                </div>
             </div>
+
             <div class="collection-sorting">
                 <button><img src="image/sorting-icon-1.svg"></button>
                 <button><img src="image/sorting-icon-2.svg"></button>
@@ -125,10 +135,80 @@
             </div>
         </div>
     </section>
-    <section>
-        <div></div>
-        <div></div>
+    <section style="height: 3000px;">
+        <div class="left"></div>
+        <div class="right"></div>
     </section>
+
+    <footer>
+        <div class="footer-container grid-width">
+            <div class="footer-menu">
+                <h3>Marketplace</h3>
+                <ul>
+                    <li>All NFTs</li>
+                    <li>Art</li>
+                    <li>Gaming</li>
+                    <li>Memberships</li>
+                    <li>PFPs</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+            <div class="footer-menu">
+                <h3>My Account</h3>
+                <ul>
+                    <li>Profile</li>
+                    <li>Favorites</li>
+                    <li>Watchlist</li>
+                    <li>My Collections</li>
+                    <li>Create</li>
+                    <li>OpenSea Pro</li>
+                    <li>Settings</li>
+                </ul>
+            </div> 
+            <div class="footer-menu">
+                <h3>Resources</h3>
+                <ul>
+                    <li>Blog</li>
+                    <li>Learn</li>
+                    <li>Help Center</li>
+                    <li>User Content FAQs</li>
+                    <li>Taxes</li>
+                    <li>Partners</li>
+                    <li>Developer Platform</li>
+                    <li>Platform Status</li>
+                </ul>
+            </div> 
+            <div class="footer-menu">
+                <h3>Company</h3>
+                <ul>
+                    <li>About</li>
+                    <li>Careers</li> 
+                    <li>Ventures</li>
+                    <li>Grants</li>
+                </ul>
+            </div> 
+            <div class="footer-menu">
+                <h3>Stats</h3>
+                <ul>
+                    <li>Rankings</li>
+                    <li>Activity</li>
+                </ul>
+            </div> 
+            <div class="footer-menu">
+                <h3>Learn</h3>
+                <ul>
+                    <li>What is an NFT?</li>
+                    <li>How to buy an NFT</li>
+                    <li>What are NFT drops?</li>
+                    <li>How to sell an NFT using OpenSea</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-logo grid-width">
+            <img src="image/opensea-logo.png" style="width: 120px;">
+            <p style="color: #909090; font-size: 14px; font-weight: normal; margin-top: 15px;">© 2018 - 2023 Ozone Networks, Inc</p>
+        </div>
+    </footer>
 
 </body>
 </html>
