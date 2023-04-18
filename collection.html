@@ -17,9 +17,9 @@
                 </a>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Collection</a></li>
-                        <li><a href="#">Article</a></li>
-                        <li><a href="#">Ranking</a></li>
+                        <li><a href="collection.html">Collection</a></li>
+                        <li><a href="article.html">Article</a></li>
+                        <li><a href="ranking.html">Ranking</a></li>
                         <li><a href="#">Minting</a></li>
                         <li><a href="#">Help</a></li>
                     </ul>
@@ -136,61 +136,1227 @@
         </div>
     </section>
     <section class="collection-categories grid-width">
-        <div class="left">
-            <div class="categories-select">
-                <input type="checkbox" id="categories-toggle-option" class="categories-selected">
-                <label for="categories-toggle-option" class="categories-toggle-option flex">
-                    <p>Price low to high</p>
-                    <img src="image/toggle-icon-16x16.svg">
-                </label>
-                <div class="categories-option">
-                    <div class="categories-option-value flex">
-                        <input type="checkbox" id="value-checkbox">
-                        <p>high to low</p>
-                    </div>
-                    <div class="categories-option-value flex">
-                        <input type="checkbox" id="value-checkbox">
-                        <p>high to low</p>
-                    </div>
-                    <div class="categories-option-value flex">
-                        <input type="checkbox" id="value-checkbox">
-                        <p>high to low</p>
-                    </div>
-                    <div class="categories-option-value flex">
-                        <input type="checkbox" id="value-checkbox">
-                        <p>high to low</p>
+        <div class="categories-container">
+            <div class="left">
+                <div class="left-test">
+                    <div class="left-container">
+                        <ul class="list-box">
+                            <li>
+                              <input type="checkbox" name="ddd" id="listFirst">
+                              <label class="main" for="listFirst">
+                                <div class="categori-title">
+                                    <p>Status</p>
+                                    <img src="image/toggle-icon-16x16.svg">
+                                </div>
+                              </label>
+                              <div class="sub">
+                                <ul>
+                                  <li class="flex">
+                                    <input type="checkbox" id="value-checkbox">
+                                    <p style="padding-left: 10px">Buy Now</p>
+                                </li>
+                                <li class="flex">
+                                    <input type="checkbox" id="value-checkbox">
+                                    <p style="padding-left: 10px">On Auction</p>
+                                </li>
+                                <li class="flex">
+                                    <input type="checkbox" id="value-checkbox">
+                                    <p style="padding-left: 10px">New</p>
+                                </li>
+                                <li class="flex">
+                                    <input type="checkbox" id="value-checkbox">
+                                    <p style="padding-left: 10px">Has Offers</p>
+                                </li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ddd" id="listSecond">
+                                <label class="main" for="listSecond">
+                                  <div class="categori-title">
+                                      <p>Price</p>
+                                      <img src="image/toggle-icon-16x16.svg">
+                                  </div>
+                                </label>
+                                <div class="sub">
+                                  <ul>
+                                    <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">0 ~ 1,000</p>
+                                  </li>
+                                  <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">1,000 ~ 10,000</p>
+                                  </li>
+                                  <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">10,000 ~ 100,000</p>
+                                  </li>
+                                  <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">100,000 ~ 500,000</p>
+                                  </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li>
+                                <input type="checkbox" name="ddd" id="listThird">
+                                <label class="main" for="listThird">
+                                  <div class="categori-title">
+                                      <p>Qauntity</p>
+                                      <img src="image/toggle-icon-16x16.svg">
+                                  </div>
+                                </label>
+                                <div class="sub">
+                                  <ul>
+                                    <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">All items</p>
+                                  </li>
+                                  <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">Single items</p>
+                                  </li>
+                                  <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">Bundles</p>
+                                  </li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li>
+                                <input type="checkbox" name="ddd" id="listForth">
+                                <label class="main" for="listForth">
+                                  <div class="categori-title">
+                                      <p>Currency</p>
+                                      <img src="image/toggle-icon-16x16.svg">
+                                  </div>
+                                </label>
+                                <div class="sub">
+                                  <ul>
+                                    <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">ETH</p>
+                                  </li>
+                                  <li class="flex">
+                                      <input type="checkbox" id="value-checkbox">
+                                      <p style="padding-left: 10px">WETH</p>
+                                  </li>
+                                  </ul>
+                                </div>
+                              </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="categories-select">
-                <input type="checkbox" id="categories-toggle-option" class="categories-selected">
-                <label for="categories-toggle-option" class="categories-toggle-option flex">
-                    <p>Price low to high</p>
-                    <img src="image/toggle-icon-16x16.svg">
-                </label>
-                <div class="categories-option">
-                    <div class="categories-option-value flex">
-                        <input type="checkbox" id="value-checkbox">
-                        <p>high to low</p>
-                    </div>
-                    <div class="categories-option-value flex">
-                        <input type="checkbox" id="value-checkbox">
-                        <p>high to low</p>
-                    </div>
-                    <div class="categories-option-value flex">
-                        <input type="checkbox" id="value-checkbox">
-                        <p>high to low</p>
-                    </div>
-                    <div class="categories-option-value flex">
-                        <input type="checkbox" id="value-checkbox">
-                        <p>high to low</p>
-                    </div>
+            <div class="right">
+                <div class="right-test">
+                    <div style="margin-left:30px; width: 1282px;">
+                        <div class="nft-line flex">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <div style="width: 291px; height: 291px; overflow: hidden;">
+                                        <img src="image/344.png" alt="">
+                                    </div>
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <div style="width: 291px; height: 291px; overflow: hidden;">
+                                        <img src="image/344.png" alt="">
+                                    </div>
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <div style="width: 291px; height: 291px; overflow: hidden;">
+                                        <img src="image/344.png" alt="">
+                                    </div>
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <div style="width: 291px; height: 291px; overflow: hidden;">
+                                        <img src="image/344.png" alt="">
+                                    </div>
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="nft-line nft-line-margin flex ">
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                            <div class="nft-box">
+                                <a href="#">
+                                    <img src="image/344.png" alt="">
+                                </a>
+                                <div class="eth-box">
+                                    <p>0.023</p>
+                                    <img src="image/ETH-icon-20x20.svg" alt="">
+                                </div>
+                                <div class="collection-nft-profile">
+                                    <div class="nft-price-main">
+                                        <h1>Energy ipad</h1>
+                                        <p>#321</p>
+                                    </div>
+                                    <div class="nft-price-sub">
+                                        <p>Last sale :  0.0002 ETH</p>
+                                    </div>
+                                </div>
+                                <button class="nft-button">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>      
                 </div>
             </div>
         </div>
-        <div class="right"></div>
     </section>
-
     <footer>
         <div class="footer-container grid-width">
             <div class="footer-menu">
