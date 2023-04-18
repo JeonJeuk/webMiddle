@@ -732,7 +732,19 @@ footer {
     display: none;
 }
 
-#listForth {
+#listFourth {
+    display: none;
+}
+
+#listSixth {
+    display: none;
+}
+
+#listSeventh {
+    display: none;
+}
+
+#listFifth {
     display: none;
 }
 
@@ -771,7 +783,7 @@ footer {
 }
 
  .sub { 
-    padding-left: 30px;
+    padding: 20px 30px;
     margin-top: 10px;
  }
 
@@ -854,7 +866,7 @@ footer {
 .collection-nft-profile {
     width: 100%;
     height: auto;
-    padding: 35px 25px;
+    padding: 40px 25px;
     
 }
 
@@ -966,11 +978,157 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 1720px;
+    margin-top: 50px;
 }
 
 .minting-right {
     width: 990px;
-    height: 750px;
-    background-color: #2A2A2B;
+    height: auto;
+}
+
+.macintosh-collection p {
+    font-size: 16px;
+    color: #5D33E2;
+}
+
+.macintosh-collection img {
+    width: 14px;
+    height: 14px;
+}
+
+.collection-name  {
+    margin: 0;
+    margin-top: 20px;
+}
+
+.nft-name {
+    display: flex;
+    margin-top: 15px;
+}
+
+.nft-name h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nft-name p {
+    font-weight: bold;
+    color: #909090;
+    padding-top: 8px;
+    padding-left: 5px;
+}
+
+#owner-name {
+    font-size: 14px;
+    color: #909090;
+    margin-top: 10px;
+}
+
+.minting-nft-price {
+    display: flex;
+    margin-top: 55px;
+}
+
+.minting-nft-price h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.minting-nft-price p {
+    font-size: 20px;
+    color: #909090;
+    padding-top: 24px;
+    padding-left: 10px;
+}
+
+.mintingBtn {
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.minting-button {
+    width: 480px;
+    height: 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.minting-blueBtn {
+    background-color: #5D33E2;
+    color: white;
+}
+
+.minting-whiteBtn {
+    color: #5D33E2;
+    transition: 0.4s;
+}
+
+.minting-whiteBtn:hover {
+    background-color: #5D33E2;
+    color: white;
+}
+
+.nft-detail {
+    height: 425px;
+    overflow-y: scroll;
+    margin-top: 50px;
+}
+
+#nft-detail-text {
+    color: #909090;
+    line-height: 160%;
+}
+
+#nft-detail-text span {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sub-flex {
+    justify-content: space-between;
+}
+
+.sub-detail {
+    color: #909090;
+}
+
+.sub-detail-text {
+    color: #5D33E2;
+}
+
+.morefrom {
+    margin-top: 150px;
+}
+
+.morefrom-container h1 {
+    margin: 0;
+}
+
+.morefrom-title {
+    padding-bottom: 30px;
 }
 /* minting Section */
+/* help Section */
+.help {
+    margin-top: 80px;
+}
+
+.help-form {
+    width: 100%;
+}
+
+.help-container h1 {
+    margin-bottom: 35px;
+}
+
+.help-content {
+    margin-top: 60px;
+}
+/* help Section */
