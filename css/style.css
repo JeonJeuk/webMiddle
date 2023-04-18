@@ -17,7 +17,7 @@ body {
 
 /* header 공통 속성 */
 .grid-width {
-    width: 90%;
+    width: 1720px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -692,4 +692,73 @@ footer {
 }
 /* collection-search Section */
 
+.categories-select {
+    width: 350px;
+    color: white; /* 적절한 텍스트 색상으로 변경 */
+}
 
+.categories-selected {
+    display: none; /* 체크박스를 숨기고 label로 대체 */
+}
+
+.categories-select .categories-option {
+    display: none;
+}
+
+.categories-selected:checked ~ .categories-option {
+    display: flex; /* 체크된 상태에서만 option 보이도록 변경 */
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.categories-option {
+    background-color: black;
+}
+
+.categories-option-value {
+    font-weight: normal;
+    padding: 16px 20px;
+    cursor: pointer; /* 클릭 가능한 옵션을 나타내기 위해 cursor 속성 추가 */
+}
+
+#value-checkbox{
+    width: 18px !important;
+    height: 18px !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance:none;
+    outline: none;
+    box-shadow: none;
+    background: url(../image/checkbox-input.svg)no-repeat;
+    margin-right: 10px;
+}
+
+#value-checkbox:checked {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance:none;
+    box-shadow: none;
+    background: url(../image/checkbox-checked.svg) no-repeat;
+}
+
+
+.categories-toggle-option {
+    padding: 0px 0px;
+    justify-content: space-between;
+    border-radius: 15px;
+    height: 50px;
+}
+
+.categories-toggle-option p {
+    font-weight: bold;
+}
+
+.categories-toggle-option img {
+    cursor: pointer;
+}
+
+.categories-toggle-option img:hover {
+    opacity: 0.8;
+}
