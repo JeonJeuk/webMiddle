@@ -966,11 +966,12 @@ footer {
 }
 
 .article-content {
-    width: 1920px;
+    width: 100%;
     height: 650px;
     background:
         url(../image/article-content.svg) no-repeat;
     color: white;
+    background-size: cover;
     margin-top: 150px;
 }
 
