@@ -212,7 +212,7 @@ input.nosubmit {
             rgba(0, 0, 0, 1), 
             rgba(0, 0, 0, 0.2)
         ),
-        url(../image/main-content-background.png);
+        url(../image/main/main-background.png);
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -483,7 +483,7 @@ footer {
             rgba(0, 0, 0, 0.1), 
             rgba(0, 0, 0, 0.1)
         ),
-        url(../image/main-content-background.png);
+        url(../image/main/main-background.png);
         background-repeat: no-repeat;
         background-size: cover;
 }
